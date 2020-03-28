@@ -1,0 +1,29 @@
+{
+  "name": "json-parser-ts",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "watch": "npm run clean && npm run build -- --watch --sourceMap",
+    "clean": "rimraf lib",
+    "test": "eslint . && npm run build && node lib/test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "@types/node": "^13.9.5",
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "fp-ts": "^2.5.3",
+    "parser-ts": "^0.6.3"
+  }
+}
